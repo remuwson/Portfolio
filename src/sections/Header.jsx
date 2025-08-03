@@ -40,13 +40,17 @@ export default function Header() {
           </a>
         </div>
 
-        {/* Menu na desktop */}
-        <nav className="hidden md:flex space-x-8 items-center">
-          {["About", "Work", "Blog", "Resumé", "Contact"].map((item) => (
+        {/* Menu na desktop w nowym stylu kafelków */}
+        <nav className="hidden md:flex space-x-2 items-center">
+          {["About", "Work", "Resumé", "Contact"].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
-              className="text-gray-700 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 font-medium transition-colors"
+              className="px-4 py-2 text-gray-700 dark:text-gray-300 font-medium
+                         bg-gray-200 dark:bg-gray-700 rounded-md
+                         hover:bg-cyan-600 dark:hover:bg-cyan-400
+                         hover:text-white dark:hover:text-white
+                         transition-colors duration-300"
             >
               {item}
             </a>
@@ -58,7 +62,11 @@ export default function Header() {
           <button
             onClick={toggleDarkMode}
             aria-label="Toggle dark mode"
-            className="text-xl text-gray-700 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"
+            className="text-xl px-4 py-2 text-gray-700 dark:text-gray-300 font-medium
+                       bg-gray-200 dark:bg-gray-700 rounded-md
+                       hover:bg-cyan-600 dark:hover:bg-cyan-400
+                       hover:text-white dark:hover:text-white
+                       transition-colors duration-300"
           >
             {darkMode ? <FaSun /> : <FaMoon />}
           </button>
@@ -81,7 +89,7 @@ export default function Header() {
         >
           <div className="p-6">
             <nav className="flex flex-col space-y-4 pt-16">
-              {["About", "Work", "Blog", "Resumé", "Contact"].map((item) => (
+              {["About", "Work", "Resumé", "Contact"].map((item) => (
                 <a
                   key={item}
                   href={`#${item.toLowerCase()}`}

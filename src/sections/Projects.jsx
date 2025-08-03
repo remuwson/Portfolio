@@ -15,23 +15,17 @@ const projects = [
     img: "/images/project2.jpg",
     link: "#",
   },
-  {
-    title: "Project Three",
-    description:
-      "Portfolio website showcasing design skills and coding projects.",
-    img: "/images/project3.jpg",
-    link: "#",
-  },
 ];
 
 const Projects = () => {
   return (
-    <section id="work" className="max-w-7xl mx-auto px-6 py-16">
+    <section id="work" className="max-w-7xl mx-auto px-6 py-16 flex flex-col">
       {/* Tytuł jest ciemny w trybie jasnym, a biały w trybie ciemnym */}
       <h2 className="text-4xl font-semibold mb-12 text-center text-gray-900 dark:text-white">
         Projects
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
+      {/* Użycie flexboxa do wyśrodkowania elementów. Usunięto klasy grid. */}
+      <div className="flex flex-wrap justify-center gap-10">
         {projects.map(({ title, description, img, link }) => (
           <a
             href={link}
