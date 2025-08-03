@@ -9,11 +9,11 @@ const projects = [
     link: "https://github.com/BoomBat-esmovia",
   },
   {
-    title: "Project Two",
+    title: "PyknijMy",
     description:
-      "An e-commerce platform with payment integration and user dashboard.",
-    img: "/images/project2.jpg",
-    link: "#",
+      "A WebApp which help you to find your new sport's friend. You can find a special event, create your own event or just find a people who want to play with you.",
+    img: "images/ikonka_pyknijmy.png",
+    link: "https://github.com/niedlich3/PyknijMy",
   },
 ];
 
