@@ -2,36 +2,27 @@ import React, { useState, useEffect } from "react";
 import { FaSun, FaMoon, FaBars, FaTimes } from "react-icons/fa";
 
 export default function Header() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(
+    // Sprawdzamy stan localStorage natychmiast przy inicjalizacji
+    localStorage.getItem("theme") === "dark"
+  );
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Efekt, który ładuje preferencje użytkownika z localStorage przy pierwszym renderowaniu
+  // Ten jedyny useEffect zajmuje się zarówno ładowaniem, jak i zapisywaniem motywu
   useEffect(() => {
-    // Sprawdzamy, czy w localStorage jest zapisana preferencja motywu.
-    // Domyślnie używamy wartości 'false' (motyw jasny).
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") {
-      setDarkMode(true);
-      document.documentElement.classList.add("dark");
-    } else {
-      setDarkMode(false);
-      document.documentElement.classList.remove("dark");
-    }
-  }, []); // Pusta tablica zależności oznacza, że ten efekt uruchomi się tylko raz, przy montowaniu komponentu.
-
-  // Efekt, który dodaje lub usuwa klasę 'dark' na tagu <html>
-  useEffect(() => {
+    // Przy montowaniu komponentu, ustawiamy początkową klasę na <html>
     if (darkMode) {
       document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
     } else {
       document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
     }
-  }, [darkMode]);
+  }, [darkMode]); // Efekt uruchomi się przy każdej zmianie stanu darkMode.
 
   const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
+    const newDarkMode = !darkMode;
+    setDarkMode(newDarkMode);
+    // Zapisujemy nowy stan do localStorage
+    localStorage.setItem("theme", newDarkMode ? "dark" : "light");
   };
 
   const toggleMenu = () => {
