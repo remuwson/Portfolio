@@ -35,7 +35,7 @@ export default function Header() {
     >
       <div className="w-full max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         <div className="font-bold text-2xl text-gray-800 dark:text-gray-100">
-          <a href="/" className="hover:text-cyan-600 transition-colors">
+          <a href="/Portfolio/" className="hover:text-cyan-600 transition-colors">
             Remy 
           </a>
         </div>

@@ -5,7 +5,7 @@ const projects = [
     title: "BoomBat",
     description:
       "BoomBat - Game service based on points which you can get daily by playing a mini clicker game, mining points (based on crypto mining) and wathcing ads",
-    img: "/images/batclicker.png",
+    img: "images/batclicker.png",
     link: "https://github.com/BoomBat-esmovia",
   },
   {
