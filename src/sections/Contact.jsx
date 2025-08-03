@@ -1,4 +1,5 @@
 import React from "react";
+import { CiMail } from "react-icons/ci";
 export default function Contact(){
     return(
         <>
@@ -6,6 +7,10 @@ export default function Contact(){
         <h2 className="text-4xl font-semibold mb-6 text-gray-900 dark:text-white">Contact</h2>
         <p className="max-w-xl mx-auto text-gray-700 dark:text-gray-400 mb-6">
           Feel free to send any messages or come up with ideas. I will try to answer as soon as possible.
+        </p>
+        <p className="max-w-xl mx-auto text-gray-700 dark:text-gray-400 mb-6">
+        <CiMail className="inline-block mr-2 text-cyan-500" />
+        remigiuszablowski@gmail.com
         </p>
         <a
           href="mailto:remigiuszablowski@gmail.com"

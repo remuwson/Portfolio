@@ -14,7 +14,7 @@ export default function Resume() {
                 </p>
                 <div className="flex flex-col md:flex-row justify-center items-center">
                     <a
-                        href="#"
+                        href="#resumé"
                         className="inline-flex items-center justify-center bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-8 rounded-full transition mr-0 md:mr-4 mb-4 md:mb-0"
                     >
                         {/* Dodano prop "svg" aby flaga się wyświetlała */}
@@ -22,7 +22,7 @@ export default function Resume() {
                         Polish Resumé
                     </a>
                     <a
-                        href="#"
+                        href="#resumé"
                         className="inline-flex items-center justify-center bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-8 rounded-full transition"
                     >
                         {/* Dodano prop "svg" aby flaga się wyświetlała */}
