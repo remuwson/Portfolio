@@ -42,7 +42,7 @@ export default function Header() {
 
         {/* Menu na desktop w nowym stylu kafelków */}
         <nav className="hidden md:flex space-x-2 items-center">
-          {["About", "Work", "Resumé", "Contact"].map((item) => (
+          {["About", "Work", "Technologies", "Resumé", "Contact"].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
@@ -108,7 +108,7 @@ export default function Header() {
             </button>
             </div>
           <nav className="flex flex-col space-y-4">
-            {["About", "Work", "Resumé", "Contact"].map((item) => (
+            {["About", "Work", "Technologies", "Resumé", "Contact"].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}

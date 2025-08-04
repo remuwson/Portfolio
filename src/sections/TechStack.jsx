@@ -35,7 +35,7 @@ const TechStack = () => {
   const [ref, isVisible] = useOnScreen({ threshold: 0.1 });
 
   return (
-    <section id="techstack" className="max-w-7xl mx-auto px-6 py-16 flex flex-col">
+    <section id="technologies" className="max-w-7xl mx-auto px-6 py-16 flex flex-col">
       <div
         ref={ref}
         className={`fade-in-on-scroll ${isVisible ? 'is-visible' : ''}`}
