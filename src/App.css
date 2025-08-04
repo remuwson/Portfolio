@@ -1,3 +1,4 @@
+/* Twój oryginalny kod */
 @keyframes fadeInSlide {
   from {
     opacity: 0;
@@ -12,7 +13,6 @@
 .fade-in-slide-down {
   animation: fadeInSlide 0.5s ease-out forwards;
 }
-
 
 /* Animacja dla efektu pojawiania się i zjeżdżania w dół */
 @keyframes slideInUp {
@@ -37,4 +37,39 @@
 .is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+
+/* NOWE ANIMACJE DLA WJEŻDŻANIA PROJEKTÓW Z BOKU */
+
+/* Animacje wjeżdżania z boku */
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px); /* Zaczyna się poza lewym ekranem */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Kończy się na swojej normalnej pozycji */
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px); /* Zaczyna się poza prawym ekranem */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Kończy się na swojej normalnej pozycji */
+  }
+}
+
+/* Klasy, które będą używane w komponencie React, aby uruchomić animację */
+.animate-slide-in-left {
+  animation: slideFromLeft 0.6s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideFromRight 0.6s ease-out forwards;
 }

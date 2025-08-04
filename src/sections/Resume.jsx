@@ -8,7 +8,7 @@ import useOnScreen from "../Scripts/useOnScreen";
 export default function Resume() {
     // Stan do kontrolowania widoczności zakładek
     const [showPolishResume, setShowPolishResume] = useState(false);
-    const [showEnglishResume, setShowEnglishResume] = useState(false);
+    const [showEnglishResume, setShowEnglishResume] = useState(true);
     
     // Użycie hooka do obserwowania widoczności głównej sekcji Resume
     const [ref, isVisible] = useOnScreen({ threshold: 0.1 });
