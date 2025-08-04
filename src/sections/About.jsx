@@ -77,7 +77,7 @@ export default function About() {
                             </ul>
                         </div>
                         
-                        <div className="flex justify-center space-x-6 mt-6 text-cyan-600 dark:text-cyan-400 text-3xl">
+                        <div className="flex justify-center space-x-6 mt-6 mb-1 text-cyan-600 dark:text-cyan-400 text-3xl">
                             <a href="https://github.com/remuwson" aria-label="GitHub" className="hover:text-cyan-800 dark:hover:text-cyan-600">
                                 <FaGithub />
                             </a>
