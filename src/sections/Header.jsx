@@ -24,14 +24,14 @@ export default function Header() {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
-  
+
   const closeMenu = () => {
     setMenuOpen(false);
   };
 
   return (
     <header
-      className={`w-full sticky top-0 z-50 backdrop-blur-md bg-white/50 dark:bg-gray-900/50 transition-colors duration-500`}
+      className={`w-full sticky top-0 z-50 bg-white/50 dark:bg-gray-900/50 transition-colors duration-500`}
     >
       <div className="w-full max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         <div className="font-bold text-2xl text-gray-800 dark:text-gray-100">
@@ -69,7 +69,7 @@ export default function Header() {
           >
             {darkMode ? <FaSun /> : <FaMoon />}
           </button>
-          
+
           {/* Przycisk menu hamburger tylko na mobile */}
           <button
             onClick={toggleMenu}
@@ -91,12 +91,13 @@ export default function Header() {
 
       {/* Mobilne menu boczne */}
       <div
-        className={`fixed inset-y-0 right-0 z-40 w-64 bg-white dark:bg-gray-900 shadow-lg transform ${
-          menuOpen ? "translate-x-0" : "translate-x-full"
-        } transition-transform duration-300 ease-in-out md:hidden`}
+        className={`fixed inset-y-0 right-0 z-40 w-64 bg-white dark:bg-gray-900 shadow-lg transform ${menuOpen ? "translate-x-0" : "translate-x-full"
+          } transition-transform duration-300 ease-in-out md:hidden`}
       >
         <div className="p-6">
+         
           <div className="flex justify-end mb-4">
+
             {/* Przycisk zamykania menu wewnątrz panelu bocznego */}
             <button
               onClick={closeMenu}
@@ -105,14 +106,23 @@ export default function Header() {
             >
               <FaTimes />
             </button>
-          </div>
+            </div>
           <nav className="flex flex-col space-y-4">
             {["About", "Work", "Resumé", "Contact"].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
                 onClick={closeMenu}
-                className="text-xl text-gray-800 dark:text-gray-200 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors border-b border-gray-200 dark:border-gray-700 pb-2"
+                className="
+                  text-xl text-gray-800 dark:text-gray-200 
+                  hover:text-cyan-600 dark:hover:text-cyan-400 
+                  transition-colors 
+                  border-b border-gray-200 dark:border-gray-700 
+                  pb-2
+                  bg-gray-200 dark:bg-gray-700
+                  rounded-md
+                  px-4
+                "
               >
                 {item}
               </a>
