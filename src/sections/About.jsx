@@ -33,7 +33,7 @@ export default function About() {
                         src={Photo}
                         alt="Remigiusz Szabłowski - lewe zdjęcie"
                         onClick={togglePhotoExpansion}
-                        className="w-full h-162  object-cover cursor-pointer transition-all duration-300 transform hover:scale-105 rounded-3xl"
+                        className="w-120 h-140  object-cover cursor-pointer transition-all duration-300 transform hover:scale-105 rounded-3xl"
                     />
                 </section>
 
