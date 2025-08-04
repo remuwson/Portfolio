@@ -1,0 +1,40 @@
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-slide-down {
+  animation: fadeInSlide 0.5s ease-out forwards;
+}
+
+
+/* Animacja dla efektu pojawiania się i zjeżdżania w dół */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Klasa do ukrycia elementu przed animacją */
+.fade-in-on-scroll {
+  opacity: 0;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  transform: translateY(40px);
+}
+
+/* Klasa aktywowana, gdy element jest widoczny */
+.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import "../index.css";
 import { FaGithub, FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import Photo from "/images/photo.jpg";
+import useOnScreen from "../Scripts/useOnScreen"; // Importujemy niestandardowy hook
 
 export default function About() {
     const [isPhotoExpanded, setIsPhotoExpanded] = useState(false);
+    // Użycie hooka do obserwowania widoczności głównej sekcji
+    const [ref, isVisible] = useOnScreen({ threshold: 0.1 });
 
     const togglePhotoExpansion = () => {
         setIsPhotoExpanded(!isPhotoExpanded);
@@ -13,8 +16,12 @@ export default function About() {
     return (
         <>
             {/* Zmieniono tło, aby kafelki były bardziej widoczne i dostosowano minimalną wysokość */}
-            <div id="about" className="flex flex-col md:flex-row justify-center items-center min-h-[91vh] bg-slate-200 dark:bg-slate-800 text-gray-900 dark:text-gray-200 p-6 md:p-10">
-
+            {/* Dodano ref i klasy animacji do głównego kontenera sekcji */}
+            <div
+                id="about"
+                className={`flex flex-col md:flex-row justify-center items-center min-h-[91vh] bg-slate-200 dark:bg-slate-800 text-gray-900 dark:text-gray-200 p-6 md:p-10 fade-in-on-scroll ${isVisible ? 'is-visible' : ''}`}
+                ref={ref}
+            >
                 {/* Lewa sekcja ze zdjęciem */}
                 <section
                     id="about-photo-1"
@@ -22,12 +29,12 @@ export default function About() {
                 >
                     {/* Kontener zdjęcia o stałej, ograniczonej wysokości i szerokości, aby był większy */}
                 
-                        <img
-                            src={Photo}
-                            alt="Remigiusz Szabłowski - lewe zdjęcie"
-                            onClick={togglePhotoExpansion}
-                            className="w-full h-162  object-cover cursor-pointer transition-all duration-300 transform hover:scale-105 rounded-3xl"
-                        />
+                    <img
+                        src={Photo}
+                        alt="Remigiusz Szabłowski - lewe zdjęcie"
+                        onClick={togglePhotoExpansion}
+                        className="w-full h-162  object-cover cursor-pointer transition-all duration-300 transform hover:scale-105 rounded-3xl"
+                    />
                 </section>
 
                 {/* Prawa sekcja na treść */}
