@@ -1,7 +1,7 @@
 import React from 'react';
 import useOnScreen from '../Scripts/useOnScreen'; // Upewnij się, że ścieżka jest poprawna
-import { FaReact, FaHtml5, FaCss3, FaJs, FaNodeJs, FaGitAlt } from 'react-icons/fa';
-import { SiMongodb, SiTailwindcss, SiExpress, SiFigma } from 'react-icons/si';
+import { FaReact, FaHtml5, FaCss3, FaJs, FaNodeJs, FaGitAlt, FaPhp } from 'react-icons/fa';
+import { SiMongodb, SiFigma } from 'react-icons/si';
 
 // Dane o technologiach, łatwe do modyfikacji
 const techStacks = [
@@ -19,6 +19,7 @@ const techStacks = [
     technologies: [
       { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
       { name: "MongoDB", icon: <SiMongodb className="text-green-600" /> },
+      { name: "PHP", icon: <FaPhp className="text-purple-300" /> },
     ],
   },
   {
