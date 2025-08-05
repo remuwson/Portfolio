@@ -12,7 +12,6 @@ const techStacks = [
       { name: "CSS3", icon: <FaCss3 className="text-blue-500" /> },
       { name: "JavaScript", icon: <FaJs className="text-yellow-500" /> },
       { name: "React", icon: <FaReact className="text-cyan-400" /> },
-      { name: "Tailwind CSS", icon: <SiTailwindcss className="text-cyan-500" /> },
     ],
   },
   {
