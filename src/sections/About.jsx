@@ -55,7 +55,7 @@ export default function About() {
                         <div className="mt-4 text-left w-full mx-auto max-w-xs">
                             <h3 className="text-lg font-bold text-gray-900 dark:text-white mt-4">Certifications:</h3>
                             <ul className="list-disc list-inside text-gray-700 dark:text-gray-400">
-                                <li>INF.03 Exam</li>
+                                <li>INF.03 ExamXDXDXD</li>
                                 <li>IC3 Spark</li>
                                 <li>eJPT Certification</li>
                             </ul>
