@@ -45,6 +45,9 @@ Intern - Perfekt Instal Szczecin
 09.2024- 10.2024 - 
 Intern - PETROSOFT PC Solution
 
+07.2025 - 08.2025 -
+Worker - Esmovia Valencia Erasmus+
+
 ### SKILLS
 * Computer maintance
 * Website development
@@ -66,7 +69,10 @@ Specialization: Cybersecurity
 ### COURSES & CERTIFICATIONS
 * eJPT- Junior Penetration Tester - December 2023
 * IC3 Spark Certification - January 2022
-* Driver License - December 2024
+* Certification INF. 02 (CKE)
+* Certification INF. 03 (CKE)
+* European Certificate: “Mobility – a way to work”
+* Esmovia Certificate for completing the Node JS and React course
 
 ### HOBBIES
 I enjoy playing team sports such as basketball and have been going to the gym for a long time. I consider myself quite athletic. Besides sports, I also enjoy learning new things and constantly expanding my knowledge.
@@ -88,10 +94,13 @@ Moje aspiracje zawodowe są związane z poszerzaniem umiejętności, które posi
 
 ### DOŚWIADCZENIE ZAWODOWE
 01.2023-05.2023 -
-Stażysta Perfekt Instal | Szczecin
+Stażysta Perfekt Instal | Polska, Szczecin
 
 09.2024- 10.2024 -
-Stażysta PETROSOFT PC Solution
+Stażysta PETROSOFT PC Solution | Polska, Szczecin
+
+07.2025 - 08.2025 -
+Pracownik Esmovia Erasmus+ | Hiszpania, Walencja
 
 ### UMIEJĘTNOŚCI
 * Montaż komputera oraz jego eksploatacja
@@ -114,7 +123,11 @@ Poziom wykształcenia: średnie
 ### SZKOLENIA, KURSY, CERTYFIKATY
 * eJPT - Junior Penetration Tester (12.2023)
 * IC3 Spark (01.2022)
-* Prawo jazdy kat. B (12.2024)
+* Certyfikat INF. 02 (CKE)
+* Certyfikat INF. 03 (CKE)
+* Europejski certyfikat pt.: “Mobliność – sposób na pracę”
+* Esmovia certyfikat za ukończenie kursu Node JS I React
+
 
 ### ZAINTERESOWANIA
 * Jazda na snowboardzie
