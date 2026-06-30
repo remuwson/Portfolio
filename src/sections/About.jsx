@@ -84,12 +84,6 @@ export default function About() {
                             <a href="https://www.facebook.com/profile.php?id=100015056496045" aria-label="FaceBook" className="hover:text-cyan-800 dark:hover:text-cyan-600">
                                 <FaFacebook />
                             </a>
-                            <a href="https://www.instagram.com/r_szablowski/" aria-label="Instagram" className="hover:text-cyan-800 dark:hover:text-cyan-600">
-                                <FaInstagram />
-                            </a>
-                            <a href="https://www.youtube.com/@remuuwa_7990" aria-label="YouTube" className="hover:text-cyan-800 dark:hover:text-cyan-600">
-                                <FaYoutube />
-                            </a>
                         </div>
                     </div>
                 </section>
