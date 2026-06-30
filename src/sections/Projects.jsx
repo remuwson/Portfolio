@@ -16,6 +16,20 @@ const projects = [
     img: "images/ikonka_pyknijmy.png",
     link: "https://github.com/niedlich3/PyknijMy",
   },
+  {
+    title: "Lost And Found",
+    description:
+      "Service made for simplfying civic lost and found data across municipal areas. HackNation Hackathon 2025 Project",
+    img: "images/godlo.png",
+    link: "https://github.com/Elteys/HackNation_2025_Odnalezione_Zguby_Gitownia",
+  },
+  {
+    title: "BreakIT",
+    description:
+      "Game designed especially for new groups getting to know eachother, or groups of people looking for a deeper connection. SCI Hackathon winning project",
+    img: "images/breakit.png",
+    link: "https://github.com/Elteys/Hackhaton_SCI_2025_BreakIT",
+  },
 ];
 
 const Projects = () => {
