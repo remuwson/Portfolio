@@ -34,8 +34,8 @@ const projects = [
     title: "Perfekt Instal",
     description:
     "A professional website built for a local HVAC contractor, showcasing their air conditioning solutions for large investments and industrial facilities.",
-    img: "images/perfekt.svg"
-    link: "https://www.perfekt-instal.pl"
+    img: "images/perfekt.svg",
+    link: "https://www.perfekt-instal.pl",
   }
 ];
 
